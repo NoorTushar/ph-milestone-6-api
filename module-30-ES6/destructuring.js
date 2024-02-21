@@ -62,3 +62,10 @@ let num2 = 20;
 
 console.log(num1); // 20
 console.log(num2); // 10
+
+// Case6: Rest(...) Operator
+
+const [firstNum, ...secondNum] = [1, 2, 3, 4, 5, 6, 7];
+
+console.log(firstNum); // 1
+console.log(secondNum); // [ 2, 3, 4, 5, 6, 7 ]
