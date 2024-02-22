@@ -56,3 +56,15 @@ console.log(...name); // N o o r   T u s h a r   K h a n
 
 let chars = [..."hello"];
 console.log(chars); // [ 'h', 'e', 'l', 'l', 'o' ]
+
+/****** case 6: Spread with Objects. Creating a copy of object ******/
+
+const data = { email: "dummy@gmail.com", password: "abcd" };
+
+const dataCopy = { ...data };
+console.log(dataCopy); // { email: 'dummy@gmail.com', password: 'abcd' }
+
+/****** case 7: Spread with Objects. Creating a copy and add properties to the Object ******/
+
+const dataCopy2 = { ...data, id: 123 };
+console.log(dataCopy2); // { email: 'dummy@gmail.com', password: 'abcd', id: 123 }
