@@ -63,9 +63,17 @@ let num2 = 20;
 console.log(num1); // 20
 console.log(num2); // 10
 
-// Case6: Rest(...) Operator
+// Case7: Destructuring with Rest Operator in Arrays
 
 const [firstNum, ...secondNum] = [1, 2, 3, 4, 5, 6, 7];
 
 console.log(firstNum); // 1
 console.log(secondNum); // [ 2, 3, 4, 5, 6, 7 ]
+
+// Case7: Destructuring with Rest Operator in Objects
+
+let player = { name: "ninja", age: 20, game: "freefire" };
+
+const { name: playerName, ...remaining } = player;
+console.log(playerName); // ninja
+console.log(remaining); // { age: 20, game: 'freefire' }
