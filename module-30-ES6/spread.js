@@ -1,4 +1,5 @@
 // 3 idiots LOL
+// Spread expands an iterable into multiple values
 
 /****** case 1: using `...` to get only the values from an array ******/
 
@@ -45,3 +46,13 @@ const sum = (...numbers) => {
 
 console.log(sum(3, 4, 5)); // 12
 console.log(sum(3, 4, 5, 6, 7)); // 25
+
+/****** case 4: iterate through a string ******/
+
+const name = "Noor Tushar Khan";
+console.log(...name); // N o o r   T u s h a r   K h a n
+
+/****** case 5: ******/
+
+let chars = [..."hello"];
+console.log(chars); // [ 'h', 'e', 'l', 'l', 'o' ]

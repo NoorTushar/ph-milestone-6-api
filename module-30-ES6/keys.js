@@ -57,3 +57,6 @@ glass.color = "red";
 console.log(glass); //{ name: 'golden glass', color: 'golden', price: 12 }
 
 // Notice that no changes took place.
+
+// 07. More Flexible is the Object.seal()
+// this will not add any property but will allow to modify current properties
