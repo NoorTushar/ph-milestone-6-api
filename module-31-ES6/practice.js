@@ -80,5 +80,6 @@ const sum = (n) => {
 };
 
 const sum2 = (n) => n * ((n + 1) / 2);
+
 console.log(sum(4));
 console.log(sum2(5));
