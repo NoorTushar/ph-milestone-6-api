@@ -74,3 +74,42 @@ var fun4 = () => {
 // so the variable name which is hoisted is saying undefined.
 // and the later part, which is the function body, is said not
 // to be a function.
+
+/***** chat gpt *****/
+
+/**
+
+Imagine you're baking a cake. Before you start mixing ingredients, you might gather all your tools and lay them out on the counter. Hoisting in JavaScript is kind of like that - it's a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, just like laying out your tools before you start baking.
+
+Let's see how hoisting works with variables and functions:
+
+    Variables Hoisting:
+
+    When JavaScript code is run, variable declarations (not assignments) are moved to the top of their containing scope. However, their assignments stay where they are. This means you can use a variable before it's declared in the code.
+
+   console.log(x); // Output: undefined
+
+   var x = 5;
+
+   In the above code, even though x is logged before it's assigned a value, it doesn't throw an error. That's because the declaration var x; is hoisted to the top, making x available throughout the entire scope, but its value is undefined until the assignment x = 5; is encountered.
+
+   Function Hoisting:
+   Function declarations are also hoisted to the top of their containing scope, so you can call functions before they appear in the code.
+
+   sayHello(); // Output: "Hello, world!"
+
+      function sayHello() {
+         console.log("Hello, world!");
+      }
+
+   Here, sayHello() is called before the function declaration appears. Still, it works because the function declaration function sayHello() {...} is hoisted to the top of the scope.
+
+   Now, regarding the relationship between hoisting and scopes:
+
+    Hoisting happens within scopes. Variable and function declarations are hoisted to the top of their containing function or global scope.
+    Hoisting can affect how variables and functions are accessed within their scopes. For example, a variable declared with var is hoisted to the top of its function or global scope, making it accessible throughout that scope. However, its value will be undefined until its assignment is reached in the code.
+
+   In essence, while hoisting and scopes are related in that hoisting affects how variables and functions are treated within their scopes, they're not the same thing. Scopes determine where variables and functions are accessible, while hoisting describes the behavior of moving declarations to the top of their containing scopes during compilation.
+
+
+ */
