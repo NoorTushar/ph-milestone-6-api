@@ -3,12 +3,18 @@
 
 /*
 
-Var, let, and const are all used for variable declaration in JavaScript, but they have some key differences in terms of scoping, reassignment, and immutability. Let's break down the differences:
+Var, let, and const are all used for variable declaration in JavaScript, but
+they have some key differences in terms of scoping, reassignment, and 
+immutability. Let's break down the differences:
 
     var:
-        * Scope: Variables declared with var have function-level scope. This means they are accessible throughout the function in which they are declared, even if they are declared within a block (e.g., if, for, while).
+        * Scope: Variables declared with var have function-level scope. This
+     means they are accessible throughout the function in which they are 
+     declared, even if they are declared within a block (e.g., if, for, while).
+
         * Reassignment: Variables declared with var can be reassigned and updated.
-        * Hoisting: Variables declared with var are hoisted to the top of their containing function or global scope during the compilation phase.
+        * Hoisting: Variables declared with var are hoisted to the top of
+         their containing function or global scope during the compilation phase.
         * Example:
 
         function example() {
@@ -22,9 +28,17 @@ Var, let, and const are all used for variable declaration in JavaScript, but the
 
 let:
 
-    * Scope: Variables declared with let have block-level scope. This means they are only accessible within the block (e.g., if, for, while) in which they are declared.
-    * Reassignment: Variables declared with let can be reassigned but not redeclared within the same block scope.
-    * Hoisting: Variables declared with let are hoisted to the top of their containing block, but they are not initialized. Accessing them before the declaration results in a ReferenceError.
+* Scope: Variables declared with let have block-level scope. This means
+ they are only accessible within the block (e.g., if, for, while) in which 
+ they are declared.
+
+* Reassignment: Variables declared with let can be reassigned but not
+  redeclared within the same block scope.
+
+  
+* Hoisting: Variables declared with let are hoisted to the top of their
+ containing block, but they are not initialized. Accessing them before the 
+ declaration results in a ReferenceError.
     * Example:
         function example() {
             let x = 5;
@@ -38,8 +52,12 @@ let:
 const:
 
     * Scope: Variables declared with const also have block-level scope.
-    * Reassignment: Variables declared with const cannot be reassigned once they are initialized. However, for objects and arrays, the values they hold can still be modified.
-    * Hoisting: Like let, variables declared with const are hoisted to the top of their containing block, but they are not initialized. Accessing them before the declaration results in a ReferenceError.
+    * Reassignment: Variables declared with const cannot be reassigned once
+    they are initialized. However, for objects and arrays, the values they
+    hold can still be modified.
+    * Hoisting: Like let, variables declared with const are hoisted to the top
+    of their containing block, but they are not initialized. Accessing them
+    before the declaration results in a ReferenceError.
     * Example:
     
         function example() {
@@ -55,5 +73,8 @@ In summary:
 
     * Use var if you need variables with function-level scope and/or need hoisting.
     * Use let if you need variables with block-level scope and/or need reassignment.
-    * Use const if you need variables with block-level scope, do not need reassignment, and/or want to enforce immutability for primitive values.
+    * Use const if you need variables with block-level scope, do not need
+    reassignment, and/or want to enforce immutability for primitive values.
 */
+
+//
