@@ -125,3 +125,9 @@ result4(); // Hello
 result4(); // Hello
 
 console.dir(result4); // we will see it has no CLOSURE scope.
+
+ui = 76;
+
+console.dir(window);
+
+// https://ostad.app/recording/id/65d9d1ac5f5f27a8c7022231

@@ -12,7 +12,7 @@
  * 8. when we declare a variable with the value 'undefined'
  * NOTE: do not use this to declare emptiness. You should use null instead.
  *
- * NULL usecase:
+ * NULL use case:
  * 1. if we want to explicitly say that the value is missing/ null
  * 2. if we want to say that value of a property does not have a value
  *
@@ -68,3 +68,12 @@ const height = null;
 
 // 2.
 const data = { routes: [], update: null };
+
+var n = 2;
+function square(num) {
+   var ans = num * num;
+   return ans;
+}
+
+var square2 = square(n);
+var square4 = square(4);
