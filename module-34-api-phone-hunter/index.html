@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,5 +12,42 @@
       />
       <script src="https://cdn.tailwindcss.com"></script>
    </head>
-   <body></body>
+   <body class="md:w-[80] w-[95] max-w-[1170px] mx-auto">
+      <header>
+         <h1 class="text-4xl text-center py-5 font-semibold">Hunting Phone</h1>
+      </header>
+      <main>
+         <section id="phone-gallery">
+            <div
+               id="phone-container"
+               class="grid md:grid-cols-2 lg:grid-cols-3 gap-4"
+            >
+               <!-- each item -->
+
+               <!-- First e amader nicher ai div ta banaite hobe -->
+               <!-- Then classlist gula add korte hobe. -->
+               <div class="card w-full bg-base-100 shadow-xl">
+                  <!-- nicher aigula innerHTML er maddhome generate korte hobe -->
+                  <figure class="px-10 pt-10">
+                     <img
+                        src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                        alt="Shoes"
+                        class="rounded-xl"
+                     />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                     <h2 class="card-title">Shoes!</h2>
+                     <p>If a dog chews shoes whose shoes does he choose?</p>
+                     <div class="card-actions">
+                        <button class="btn btn-primary">Buy Now</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer></footer>
+      <!--  -->
+      <script src="scripts/phone.js"></script>
+   </body>
 </html>
