@@ -1,5 +1,5 @@
-const loadPhone = () => {
-   const url = "https://openapi.programming-hero.com/api/phones?search=iphone";
+const loadPhone = (searchText) => {
+   const url = `https://openapi.programming-hero.com/api/phones?search=${searchText}`;
 
    fetch(url)
       .then((res) => res.json())
@@ -7,10 +7,11 @@ const loadPhone = () => {
 };
 
 const displayPhones = (phone) => {
+   // this is the parent container where each items will be appended
    const phoneContainer = document.getElementById("phone-container");
+   phoneContainer.innerHTML = "";
 
    phone.forEach((phone) => {
-      console.log(phone);
       // 1. create the div for each item
       const phoneCard = document.createElement("div");
 
@@ -42,4 +43,10 @@ const displayPhones = (phone) => {
    });
 };
 
-loadPhone();
+// search Button
+const handleSearch = () => {
+   const searchField = document.getElementById("searchInput");
+   const searchText = searchField.value;
+
+   loadPhone(searchText);
+};
