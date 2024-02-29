@@ -32,9 +32,18 @@
             </div>
          </section>
          <section id="phone-gallery">
+            <!-- loading spinner div -->
+            <div id="spinner-div" class="text-center mt-20 hidden">
+               <span
+                  class="loading loading-dots text-primary loading-lg"
+               ></span>
+            </div>
+            <!-- loading spinner div end -->
+
+            <!-- phone gallery container -->
             <div
                id="phone-container"
-               class="grid md:grid-cols-2 lg:grid-cols-3 gap-4"
+               class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 py-10"
             >
                <!-- each item -->
 
@@ -42,7 +51,7 @@
                <!-- Then classlist gula add korte hobe. -->
                <div class="card w-full bg-base-100 shadow-xl">
                   <!-- nicher aigula innerHTML er maddhome generate korte hobe -->
-                  <figure class="px-10 pt-10">
+                  <!-- <figure class="px-10 pt-10">
                      <img
                         src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
                         alt="Shoes"
@@ -55,8 +64,12 @@
                      <div class="card-actions">
                         <button class="btn btn-primary">Buy Now</button>
                      </div>
-                  </div>
+                  </div> -->
                </div>
+            </div>
+            <!-- phone gallery container end -->
+            <div class="text-center hidden" id="showButtonContainer">
+               <button class="btn btn-accent">Show All</button>
             </div>
          </section>
       </main>
