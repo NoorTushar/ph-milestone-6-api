@@ -69,8 +69,35 @@
             </div>
             <!-- phone gallery container end -->
             <div class="text-center hidden" id="showButtonContainer">
-               <button class="btn btn-accent">Show All</button>
+               <button
+                  onclick="handleShowAll()"
+                  id="showAllBtn"
+                  class="btn btn-accent"
+               >
+                  Show All
+               </button>
             </div>
+
+            <!-- Show Details Modal -->
+            <!-- Open the modal using ID.showModal() method -->
+
+            <dialog
+               id="modal_show_details"
+               class="modal modal-bottom sm:modal-middle"
+            >
+               <div class="modal-box">
+                  <h3 class="font-bold text-lg">Hello!</h3>
+                  <p class="py-4">
+                     Press ESC key or click the button below to close
+                  </p>
+                  <div class="modal-action">
+                     <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                     </form>
+                  </div>
+               </div>
+            </dialog>
          </section>
       </main>
       <footer></footer>
