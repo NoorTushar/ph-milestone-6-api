@@ -74,9 +74,8 @@ const handleSearch = () => {
 // parameter present thakle bhitore condition dibo show and hide er.
 const showSpinner = (isLoading) => {
    const spinnerDiv = document.getElementById("spinner-div");
-   if (isLoading) {
-      spinnerDiv.classList.remove("hidden");
-   } else {
-      spinnerDiv.classList.add("hidden");
-   }
+
+   isLoading
+      ? spinnerDiv.classList.remove("hidden")
+      : spinnerDiv.classList.add("hidden");
 };
